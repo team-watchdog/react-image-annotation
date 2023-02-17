@@ -26,6 +26,12 @@ storiesOf("Annotator", module)
     <Annotator
       onExit={actionAddon("onExit")}
       middlewares={middlewares}
+      enabledTools ={[
+        "select",
+        "create-box",
+      ]}
+      hideHeader
+      hideSettings
       labelImages
       regionClsList={["Alpha", "Beta", "Charlie", "Delta"]}
       regionTagList={["tag1", "tag2", "tag3"]}
